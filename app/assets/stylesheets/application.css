@@ -16,10 +16,11 @@ body {
   margin: 0;
 }
 
-.index-container{
-    width:800px;
-    margin: 0 auto;
-    padding: 0 20px 40px 20px;
+/* 一覧・詳細用の全体コンテナ */
+.index-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
 }
 
 /* ヘッダー（タイトルと右上ボタンの横並び） */
@@ -29,7 +30,6 @@ body {
   align-items: center;
   margin-bottom: 25px;
 }
-
 .header-container h1 {
   font-size: 24px;
   margin: 0;
@@ -74,14 +74,12 @@ body {
 .form-group {
   margin-bottom: 20px;
 }
-
 .form-group label {
   display: block;
   font-weight: bold;
   margin-bottom: 8px;
   font-size: 14px;
 }
-
 .form-control {
   width: 100%;
   padding: 10px 12px;
@@ -90,21 +88,17 @@ body {
   box-sizing: border-box;
   font-size: 15px;
 }
-
 .form-row {
   display: flex;
 }
-
 .flex-1 {
   flex: 1;
 }
-
 .checkbox-group {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-
 .checkbox-group label {
   margin-bottom: 0;
   font-weight: normal;
@@ -116,7 +110,6 @@ body {
   width: 100%;
   border-collapse: collapse;
 }
-
 .schedule-table th {
   text-align: left;
   padding: 14px 10px;
@@ -124,7 +117,6 @@ body {
   color: #475569;
   font-size: 14px;
 }
-
 .schedule-table td {
   padding: 16px 10px;
   border-bottom: 1px solid #f1f5f9;
@@ -145,10 +137,7 @@ body {
   display: inline-flex;
   align-items: center;
 }
-
-.btn-primary:hover { 
-  background-color: #1d4ed8; 
-}
+.btn-primary:hover { background-color: #1d4ed8; }
 
 .btn-cancel {
   background-color: white;
@@ -159,20 +148,14 @@ body {
   border-radius: 6px;
   font-size: 15px;
 }
-
-.btn-cancel:hover { 
-  background-color: #f8fafc; 
-}
+.btn-cancel:hover { background-color: #f8fafc; }
 
 .link-action {
   color: #2563eb;
   text-decoration: none;
   margin-right: 5px;
 }
-
-.link-action:hover { 
-  text-decoration: underline; 
-}
+.link-action:hover { text-decoration: underline; }
 
 .btn-delete-fallback {
   background: none;
@@ -189,6 +172,11 @@ body {
   text-decoration: underline;
 }
 
+.index-container{
+    width:800px;
+    margin: 0 auto;
+    padding: 0 20px 40px 20px;
+}
 
 .show-table {
   width: 100%;
@@ -211,4 +199,8 @@ body {
   background-color: white;
   color: #333333;
   border: 1px solid #333333;
+}
+
+.card-box {
+  background-color: white;
 }
