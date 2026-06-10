@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>スケジュール管理アプリ</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+  </head>
+
+  <body>
+    <header style="background-color: #1e293b; color: white; text-align: center; padding: 15px 0; font-weight: bold; font-size: 18px; margin-bottom: 30px;">
+      スケジュール管理アプリ
+    </header>
+
+    <div style="max-width: 1100px; margin: 0 auto; padding: 0 20px;">
+      <% if flash[:notice] %>
+        <p style="color: #155724; background-color: #d4edda; border: 1px solid #c3e6cb; padding: 12px; border-radius: 6px; margin-bottom: 20px; font-weight: bold;">
+          <%= flash[:notice] %>
+        </p>
+      <% end %>
+
+      <% if flash[:alert] %>
+        <p style="color: #721c24; background-color: #f8d7da; border: 1px solid #f5c6cb; padding: 12px; border-radius: 6px; margin-bottom: 20px; font-weight: bold;">
+          <%= flash[:alert] %>
+        </p>
+      <% end %>
+    </div>
+
+    <%= yield %>
+  </body>
+</html>
